@@ -20,84 +20,92 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#6c63ff,#4834d4);
-}
-
-.card{
-    width:380px;
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 15px 35px rgba(0,0,0,0.2);
-    text-align:center;
-}
-
-.header{
-    height:130px;
-    background:linear-gradient(135deg,#6c63ff,#8e7dff);
-}
-
-.profile-pic{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    border:5px solid white;
-    margin-top:-60px;
-    object-fit:cover;
-}
-
-.content{
+    background:linear-gradient(135deg,#667eea,#764ba2);
     padding:20px;
 }
 
-h1{
-    font-size:1.8rem;
-    color:#222;
+.card{
+    width:400px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    transition:0.3s;
 }
 
-.role{
-    color:#666;
-    margin-top:5px;
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.header{
+    background:linear-gradient(135deg,#6c63ff,#4834d4);
+    color:white;
+    text-align:center;
+    padding:40px 25px;
+}
+
+.header h1{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.header p{
     font-size:0.95rem;
+    opacity:0.9;
 }
 
-.bio{
-    margin-top:15px;
+.content{
+    padding:25px;
+}
+
+.about{
+    text-align:center;
     color:#555;
     line-height:1.6;
-    font-size:0.9rem;
+    margin-bottom:25px;
 }
 
 .stats{
     display:flex;
-    justify-content:space-around;
-    margin:25px 0;
+    justify-content:space-between;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.stat{
+    flex:1;
 }
 
 .stat h2{
     color:#6c63ff;
+    margin-bottom:5px;
 }
 
 .stat p{
-    font-size:0.85rem;
     color:#666;
+    font-size:0.85rem;
+}
+
+.skills-title{
+    font-weight:600;
+    color:#333;
+    margin-bottom:12px;
 }
 
 .skills{
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
     gap:10px;
     margin-bottom:25px;
 }
 
 .skill{
-    background:#ecebff;
-    color:#4b3fd3;
+    background:#eef0ff;
+    color:#4c46d3;
     padding:8px 14px;
     border-radius:20px;
     font-size:0.8rem;
-    font-weight:600;
+    font-weight:500;
 }
 
 .links{
@@ -108,50 +116,45 @@ h1{
 
 .links a{
     text-decoration:none;
-    background:#6c63ff;
     color:white;
-    padding:10px 15px;
+    background:#6c63ff;
+    padding:10px 16px;
     border-radius:8px;
     transition:0.3s;
+    font-size:0.9rem;
 }
 
 .links a:hover{
-    transform:translateY(-3px);
     background:#4834d4;
 }
 
 .footer{
-    margin-top:25px;
+    text-align:center;
     padding:15px;
-    background:#f8f8ff;
-    color:#777;
+    background:#f7f7ff;
+    color:#666;
     font-size:0.8rem;
+    border-top:1px solid #eee;
 }
 </style>
 </head>
+
 <body>
 
 <div class="card">
 
-    <div class="header"></div>
-
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-         alt="Profile"
-         class="profile-pic">
+    <div class="header">
+        <h1>Keerthana G Pillai</h1>
+        <p>Computer Science Student • Java Developer • Web Enthusiast</p>
+    </div>
 
     <div class="content">
 
-        <h1>Keerthana G Pillai</h1>
-
-        <p class="role">
-            Computer Science Student | Java Developer
-        </p>
-
-        <p class="bio">
+        <div class="about">
             Passionate about software development, web technologies,
-            databases, and problem solving. Building projects and
-            continuously learning new technologies.
-        </p>
+            and problem solving. I enjoy building practical applications
+            and continuously learning new technologies.
+        </div>
 
         <div class="stats">
             <div class="stat">
@@ -170,11 +173,14 @@ h1{
             </div>
         </div>
 
+        <div class="skills-title">Skills</div>
+
         <div class="skills">
             <span class="skill">Java</span>
             <span class="skill">Python</span>
             <span class="skill">React</span>
             <span class="skill">SQL</span>
+            <span class="skill">Git</span>
             <span class="skill">GitHub</span>
             <span class="skill">HTML</span>
             <span class="skill">CSS</span>
@@ -183,13 +189,13 @@ h1{
         <div class="links">
             <a href="#">LinkedIn</a>
             <a href="#">GitHub</a>
-            <a href="#">LeetCode</a>
+            <a href="#">Portfolio</a>
         </div>
 
-        <div class="footer">
-            Fundamental CSS Comprehension Project
-        </div>
+    </div>
 
+    <div class="footer">
+        Fundamental CSS Comprehension Project
     </div>
 
 </div>
